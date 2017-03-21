@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="985.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.Controller">
+   <children>
+      <BarChart fx:id="chart" layoutX="8.0" layoutY="81.0" prefHeight="467.0" prefWidth="701.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <TextField fx:id="aField" layoutX="56.0" layoutY="38.0" prefHeight="25.0" prefWidth="82.0" />
+      <TextField fx:id="rField" layoutX="174.0" layoutY="38.0" prefHeight="25.0" prefWidth="82.0" />
+      <TextField fx:id="mField" layoutX="295.0" layoutY="38.0" prefHeight="25.0" prefWidth="82.0" />
+      <TextField fx:id="nField" layoutX="537.0" layoutY="38.0" prefHeight="25.0" prefWidth="82.0" />
+      <Button fx:id="computeButton" layoutX="706.0" layoutY="38.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="101.0" text="Compute" />
+      <Label layoutX="39.0" layoutY="42.0" text="a" />
+      <Label layoutX="159.0" layoutY="42.0" text="R" />
+      <Label layoutX="274.0" layoutY="42.0" text="m" />
+      <Label layoutX="515.0" layoutY="42.0" text="n" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e4e9ed82" height="99.0" layoutX="712.0" layoutY="89.0" stroke="BLACK" strokeType="INSIDE" width="256.0" />
+      <Label layoutX="727.0" layoutY="104.0" text="M[X]:" />
+      <Label layoutX="727.0" layoutY="131.0" text="D[X]:" />
+      <Label layoutX="736.0" layoutY="157.0" text="σ:" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e4e9ed82" height="71.0" layoutX="712.0" layoutY="226.0" stroke="BLACK" strokeType="INSIDE" width="256.0" />
+      <Label layoutX="734.0" layoutY="237.0" text="P:" />
+      <Label layoutX="734.0" layoutY="270.0" text="L:" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e4e9ed82" height="71.0" layoutX="712.0" layoutY="336.0" stroke="BLACK" strokeType="INSIDE" width="256.0" />
+      <Label layoutX="735.0" layoutY="347.0" text="π/4:" />
+      <Label layoutX="735.0" layoutY="379.0" text="2K/N:" />
+      <Label fx:id="mLabel" layoutX="798.0" layoutY="104.0" prefHeight="17.0" prefWidth="148.0" text="M result" />
+      <Label fx:id="dLabel" layoutX="798.0" layoutY="131.0" prefHeight="17.0" prefWidth="148.0" text="D result" />
+      <Label fx:id="sLabel" layoutX="798.0" layoutY="157.0" prefHeight="17.0" prefWidth="148.0" text="σ result" />
+      <Label fx:id="pLabel" layoutX="795.0" layoutY="237.0" prefHeight="17.0" prefWidth="148.0" text="P result" />
+      <Label fx:id="lLabel" layoutX="796.0" layoutY="270.0" prefHeight="17.0" prefWidth="148.0" text="L result" />
+      <Label fx:id="piLabel" layoutX="795.0" layoutY="347.0" prefHeight="17.0" prefWidth="148.0" text="π/4 result" />
+      <Label fx:id="knLabel" layoutX="795.0" layoutY="379.0" prefHeight="17.0" prefWidth="148.0" text="2K/N result" />
+      <Button fx:id="computeExpButton" layoutX="869.0" layoutY="38.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="101.0" text="Compute Exp" />
+      <TextField fx:id="lambdaField" layoutX="423.0" layoutY="38.0" prefHeight="25.0" prefWidth="82.0" />
+      <Label layoutX="405.0" layoutY="42.0" text="λ" />
+   </children>
+</Pane>
