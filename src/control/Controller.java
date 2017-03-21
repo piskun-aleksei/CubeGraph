@@ -74,7 +74,8 @@ public class Controller implements Initializable {
                         }
                         dates = sortDates(dates);
                         bufferedReader.close();
-
+                        // Barchart values on top - http://stackoverflow.com/questions/15237192/how-to-display-bar-value-on-top-of-bar-javafx
+                        //TODO - correct namings below
                         XYChart.Series series = new XYChart.Series();
                         series.setName("Graph");
                         for (Integer i = 0; i < dates.size(); i++) {
